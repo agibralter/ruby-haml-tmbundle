@@ -70,7 +70,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^( *)%script.*</string>
+			<string>^( *):javascript</string>
 			<key>end</key>
 			<string>^(?!\1  )</string>
 			<key>name</key>
@@ -78,19 +78,8 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>begin</key>
-					<string>( +):plain</string>
-					<key>end</key>
-					<string>^(?!\1  )</string>
-					<key>name</key>
-					<string>plain.js.haml</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>source.js.jquery</string>
-						</dict>
-					</array>
+					<key>include</key>
+					<string>source.js.jquery</string>
 				</dict>
 			</array>
 		</dict>
